@@ -142,6 +142,7 @@
 
     // CHECK SUPPORT
     var body = document.body;
+
     var impressSupported =
 
                           // Browser should support CSS 3D transtorms
@@ -1790,7 +1791,9 @@
 
         var data = event.target.dataset;
         var steps = document.querySelectorAll( ".step" );
-
+		console.log("steps");
+console.log(steps);
+console.log("steps");
         // Data-goto-key-list="" & data-goto-next-list="" //////////////////////////////////////////
         if ( data.gotoKeyList !== undefined &&
              data.gotoNextList !== undefined &&

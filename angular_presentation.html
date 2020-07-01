@@ -1,15 +1,79 @@
 <html>
 
 <head>
+<title></title>
+<meta name="description" content="This is a homework for JavaScript course by Pirple">
+<link rel="stylesheet" type="text/css" href="presentation_style.css" />
 </head>
 
 <body>
  <div id="impress">
 	<div class="no-support-message">
-		Your browser doesn't support impress.js.  Try Chrome or Safari.
+		Your browser doesn't support impress.js. Try Chrome or Safari.
 	</div>
-	<div class="step" data-x="0" data-y="0">STEP 1</div>
-	<div class="step" data-x="0" data-y="1000">STEP 2</div>
+
+	<div id="title" class="step firstStep" data-x="600" data-y="100">
+		<div style = "background-color: rgba(255, 255, 255, 0.8);">
+		<div class="textStretch capitalText" id="intro">
+			<div>How to effectively</div>
+			<div>and speedily develop web and</div>
+			<div>mobile apps built on a common</div>
+			<div><span id="foundation">foundation</span></div>
+		</div>
+		<div class="container">
+			<img src="img/angular.svg" height="200px"/>
+		</div>
+		<div class="smallComment">
+			Angular is an open-source web application framework developed by Google and world-wide community.
+			The project's base was previous versions of Angular that is reffered to as AngularJS.
+			In this presentation will touch upon Angular2+.
+			AngularJS and Angular2+ are driven by different solution styles. 
+		</div>
+	</div>
+	</div>
+
+	<div class="step cons" data-x="0" data-y="0" style="background-color: lightgoldenrodyellow;">
+		<div class="container" >
+			<div class="imgContainer"><img src="img/sad.png"></div>
+			<div class="titleContainer"><span class="title redText">Cons</span></div>
+		</div>
+		<ul class="red">
+			<li>Constant framework updates add tons of work to the developers' plate</li>
+			<li>Steep learning curve</li>
+			<li>Big and compilated</li>
+			<li>The lifecycle app is complex and time-consuming to master</li>
+			<li><b>Poor</b> scalability</li>
+			<li>Bad performance when rendering big data grids, lists which leds to UI lags*</li>
+			<li>Name collisions are common</li>
+		</ul>
+
+		<div class="smallComment">*The culprit is so-called dirty checking, which is scanning scope for changes in variables. This can be time-ineffective.</div>
+	</div>
+
+	<div class="step" data-x="500" data-y="-400">
+		<div class="container">
+			<div class="imgContainer"><img src="img/happy.png"></div>
+			<div style="titleContainer"><span class="title greenText">Pros</span></div>
+		</div>
+		<ul class="green">
+			<li>Angular directly modifies DOM (it's fast!)</li>
+			<li>Bindings between DOM elements and TypeScript code</li>
+			<li>Hiding implementation details under the hood</li>
+			<li>Reusing reliable, ready-to-go components</li>
+			<li>Graphical templates of are more readable than when using other technologies, eg. jQuery</li>
+			<li>Decoupling application’s logic from DOM manipulation</li>
+		</ul>
+	</div>
+
+	<div class="step" data-x="500" data-y="-800" data-scale="1">
+    This is slide 4
+	</div>
+	<div class="step" data-x="0" data-y="-800" data-rotate="90">
+		This is slide 5 and it rotates in.
+	</div>
+	<div class="step" data-x="-2600" data-y="-800" data-rotate-x="30" data-rotate-y="-60" data-rotate-z="90" data-scale="4">
+		This is slide 7 and it has a 3D transition AND a scale.
+	</div>
  </div>
  
 
