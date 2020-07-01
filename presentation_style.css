@@ -154,3 +154,7 @@ li {
     background-image: url("img/japanese_sun.jpg");
     background-position: center;
 }
+
+.semiTransparent {
+    background-color: rgba(255, 255, 255, 0.8);
+}
