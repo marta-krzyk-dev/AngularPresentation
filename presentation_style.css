@@ -119,6 +119,10 @@ img {
     color: red;
 }
 
+.whiteBackground {
+    background-color: white;
+}
+
 ul {
     /*line-break: loose;*/
     padding-top: 10px;
@@ -140,6 +144,14 @@ li {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
     font-family: 'Lato', georgia, serif;
+}
+
+.wideStep {
+    width: 800px;
+}
+
+.autoWidth {
+    width: auto;
 }
 
 .smallComment{
