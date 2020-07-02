@@ -1,5 +1,10 @@
 This presentation is an introduction to Angular built with [impress.js](http://bartaz.github.com/impress.js) as a homework assignment for Pirple's JavaScript course.
 
+# How to Run
+1. Download the project
+2. Open angular_presentation.html file with Chrome or Safari.
+3. Traverse the presentation with space or arrows on keyboard.
+
 <small>
 MIT License
 
