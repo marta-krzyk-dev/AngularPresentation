@@ -44,7 +44,88 @@
 			JavaScript that adds static typing, interfaces, generics, enumerated types and more.</div>
 	</div>
 
-	<div class="step cons" data-x="0" data-y="0" style="background-color: lightgoldenrodyellow;">
+	<div class="step" style="width: 800px;" data-x="-200" data-y="-1000" data-rotate="90">
+		<span class="title blackText">Modules</span><span class="title smallTitle blackText">and</span>
+		<span class="title pinkText">components</span>
+		<span class="textStretch capitalText">
+			<div>Angular app is a set of <strong class="purpleText">NgModules</strong>: at least 1 root module (AppModule) and any number of feature modules.
+				The children of a module are called <strong class="greenText">components</strong>.
+				NgModules (parents) provide a <strong class="babyBlueText">compilation context</strong> for their components.</div>
+		</span>
+		<div class="smallComment">Take a look at the root folder of an Angular app. The directories help to mark the hierarchy between the modules and components.</div>
+		<div class="container">
+			<img src="img/components_dir.png" height="400px" width="auto"/>
+			<img src="img/components_diagram.png" height="400px" width="auto"/>
+		</div>
+	</div>
+
+	<div class="step wideStep" data-x="-2600" data-y="-800" data-rotate-x="30" data-rotate-y="-60" data-rotate-z="90" data-scale="1">
+		<span class="title pinkText">component</span>
+		<div class="textStretch capitalText whiteBackground">
+			is made up of 3 things: a TypeScript class, HTML view and CSS style.
+		</div>
+		<div class="smallComment">Look at the Product component class below.
+			You define a component's application logic—what it does to support the view—inside a class.
+			The class interacts with the view through an API of properties and methods.
+			For example, ProductListComponent has a products property that holds an array of products.
+		</div>	
+		<div class="container">
+			<img src="img/product_component.png" height="400px" width="auto"/>
+		</div>
+		<div class="smallComment">
+			The <strong>@Component</strong> decorator identifies the class immediately below it as a component class, and specifies its metadata. 
+		</div>	
+		<div class="textStretch capitalText whiteBackground">
+			<strong class="babyBlueText">Selector</strong> : A CSS selector that tells Angular to create and insert an instance of this component wherever it finds the corresponding tag in template HTML.  </br>
+			<strong class="blueText">Template Url</strong> : The module-relative address of this component's HTML template.
+		</div>
+	</div>
+
+	<div class="step wideStep darkBlueBorder" data-x="3300" data-y="800" data-rotate-x="-60" data-rotate-y="-60" data-rotate-z="90" data-scale="1">
+		<span class="title blueText">view</span>
+		<div class="textStretch capitalText whiteBackground">
+			A component controls a patch of screen called a <strong class="blueText">view</strong>.
+			You define a component's view with its companion template.
+			A template is a form of HTML that tells Angular how to render the component.
+		</div>
+		<div class="container">
+			<img src="img/view.png" height="auto" width="auto"/>
+		</div>
+		<div class="smallComment">
+			 Template looks like regular HTML but it contains Angular <strong class="greenText">template syntax</strong>,
+			 which alters the HTML. Your template can use data binding, pipes to transform data before it is displayed, and directives to apply app logic to what gets displayed.</div>
+	</div>
+
+	<div class="step" data-x="1200" data-y="0" data-rotate-x="60" data-rotate-y="60" data-rotate-z="90" data-scale="1">
+		<span class="title blackText">Template syntax</span>
+		<div>
+			<ol class="title smallTitle">
+				<li class="babyBlueText">Directives</li>
+				<li class="orangeText">Data binding</li>
+				<li class="greenText">Pipes</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="step wideStep bluePatternBackground" data-x="1200" data-y="-800" data-rotate-x="60" data-rotate-y="60" data-rotate-z="90" data-scale="1">
+		<span class="title babyBlueText">Directives</span>
+		
+		<div class="importantContent">
+			Directives are instructions used by Angular to transform DOM. A directive is a class with a @Directive() decorator. 
+		</div>
+		<div class="scroll">
+			<div class=" mediumTitle pinkText">Structural directive</div>
+			<div class="smallComment">Structural directives alter layout by adding, removing, and replacing elements in the DOM.
+				The most popular ones are: *ngFor, *ngIf, ngSwitch (works together with *ngSwitchCase, *ngSwitchDefault).</div>
+			<div class="container"><img src="img/structural_directive.png"/></div>
+			<div class="mediumTitle orangeText">Attribute directive</div>
+			<div class="smallComment">Attribute directives alter the appearance or behavior of an existing element.</div>
+			<img src="img/attribute_directive.png"/>
+		</div>
+		<div class="rotated smallTitle greenText">You can also write your own directives!</div>
+	</div>
+
+	<div class="step cons" data-x="0" data-y="0">
 		<div class="container" >
 			<div class="imgContainer"><img src="img/sad.png"></div>
 			<div class="titleContainer"><span class="title redText">Cons</span></div>
@@ -75,61 +156,6 @@
 			<li>Graphical templates of are more readable than when using other technologies, eg. jQuery</li>
 			<li>Decoupling application’s logic from DOM manipulation</li>
 		</ul>
-	</div>
-
-
-
-	
-	<div class="step" style="width: 800px;" data-x="-200" data-y="-1000" data-rotate="90">
-		<span class="title blackText">Modules</span><span class="title smallTitle blackText">and</span>
-		<span class="title pinkText">components</span>
-		<span class="textStretch capitalText">
-			<div>Angular app is a set of <strong class="purpleText">NgModules</strong>: at least 1 root module (AppModule) and any number of feature modules.
-				The children of a module are called <strong class="greenText">components</strong>.
-				NgModules (parents) provide a <strong class="babyBlueText">compilation context</strong> for their components.</div>
-		</span>
-		<div class="smallComment">Take a look at the root folder of an Angular app. The directories help to mark the hierarchy between the modules and components.</div>
-		<div class="container">
-			<img src="img/components_dir.png" height="400px" width="auto"/>
-			<img src="img/components_diagram.png" height="400px" width="auto"/>
-		</div>
-	</div>
-
-	<div class="step wideStep" data-x="-2600" data-y="-800" data-rotate-x="30" data-rotate-y="-60" data-rotate-z="90" data-scale="5">
-		<span class="title pinkText">component</span>
-		<div class="textStretch capitalText whiteBackground">
-			<strong class="pinkText">Components</strong> are made up of 3 things: a TypeScript class, HTML view and CSS style. A component controls a patch of screen called a <strong class="blueText">view</strong>.
-		</div>
-		<div class="smallComment">Look at the Product component class below.
-			You define a component's application logic—what it does to support the view—inside a class.
-			The class interacts with the view through an API of properties and methods.
-			For example, ProductListComponent has a products property that holds an array of products.
-		</div>	
-		<div class="container">
-			<img src="img/product_component.png" height="400px" width="auto"/>
-		</div>
-		<div class="smallComment">
-			The <strong>@Component</strong> decorator identifies the class immediately below it as a component class, and specifies its metadata. 
-		</div>	
-		<div class="textStretch capitalText whiteBackground">
-			<strong class="babyBlueText">Selector</strong> : A CSS selector that tells Angular to create and insert an instance of this component wherever it finds the corresponding tag in template HTML.  </br>
-			<strong class="blueText">Template Url</strong> : The module-relative address of this component's HTML template.
-		</div>
-	</div>
-
-	<div class="step wideStep" data-x="3300" data-y="800" data-rotate-x="-60" data-rotate-y="-60" data-rotate-z="90" data-scale="2">
-		<span class="title blueText">view</span>
-		<div class="textStretch capitalText whiteBackground">
-			A component controls a patch of screen called a <strong class="blueText">view</strong>.
-			You define a component's view with its companion template.
-			A template is a form of HTML that tells Angular how to render the component.
-		</div>
-		<div class="container">
-			<img src="img/view.png" height="auto" width="auto"/>
-		</div>
-		<div class="smallComment">
-			 Template looks like regular HTML but it contains Angular <strong class="greenText">template syntax</strong>,
-			 which alters the HTML. Your template can use data binding, pipes to transform data before it is displayed, and directives to apply app logic to what gets displayed.</div>
 	</div>
  </div>
  

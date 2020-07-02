@@ -1,214 +1,348 @@
-.no-support-message { display:none; }
-.impress-not-supported .no-support-message { display:block; }
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    font-family: 'Lato', sans-serif;
-    text-shadow: rgba(0,0,0,.01) 0 0 1px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    line-height: 1.2;
+.no-support-message {
+  display: none;
+}
+.impress-not-supported .no-support-message {
+  display: block;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Lato", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 .cons {
-    color: red;
+  color: red;
+  background-color: lightgoldenrodyellow;
 }
 
-.consTitle 
-{
-    color:yellow;
-    background-color: red;
+.consTitle {
+  color: yellow;
+  background-color: red;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.importantContent {
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .imgContainer {
-    width: 50%;
-    height:50%;
+  width: 50%;
+  height: 50%;
 }
 .titleContainer {
-    /*width:60%;*/
+  /*width:60%;*/
 }
-.title { 
-    font-size: 100px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0px;
-    margin-bottom: 12px;
-    text-align: center;
-    color: black;
-    padding: 0px 15px 0px 15px;
+.title {
+  font-size: 100px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: black;
+  padding: 0px 15px 0px 15px;
 }
 
 .smallTitle {
-    font-size: 50px;
-    margin-left: 5px;
-    padding:0px 5px 0px 5px;
+  font-size: 30px;
+  margin-left: 5px;
+  padding: 0px 5px 0px 5px;
+}
+
+.mediumTitle {
+  font-size: 50px;
+  padding: 5px 15px 5px 15px;
+  text-transform: uppercase;
+  margin: 10px 5px 5px 0px;
+  padding: 0px 5px 0px 5px;
+  text-align: left;
 }
 
 .greenText {
-    background-color:#45b23d;
-    color:white;
+  background-color: #45b23d;
+  color: white;
 }
 
 .redText {
-    background-color:red;
-    color:#fff43b;
+  background-color: red;
+  color: #fff43b;
 }
 
 .blueText {
-    background-color: darkblue;
-    color:white;
+  background-color: darkblue;
+  color: white;
 }
 
 .babyBlueText {
-    background-color: skyblue;
-    color:white;
+  background-color: skyblue;
+  color: white;
 }
 
 .blackText {
-    background-color: black;
-    color:white;
+  background-color: black;
+  color: white;
 }
 
 .pinkText {
-    background-color: #FF2B69;
-    color:white;
+  background-color: #ff2b69;
+  color: white;
 }
 
 .purpleText {
-    background-color: purple;
-    color:white;
+  background-color: purple;
+  color: white;
+}
+
+.orangeText {
+  background-color: orangered;
+  color: white;
 }
 
 .green {
-    color: #45b23d;
+  color: #45b23d;
 }
 
 .red {
-    color: red;
+  color: red;
 }
 
 .whiteBackground {
-    background-color: white;
+  background-color: white;
+}
+
+.bluePatternBackground {
+  background-image: url("img/blue_wallpaper.png");
+  background-repeat: repeat;
+  background-position: left;
 }
 
 ul {
-    /*line-break: loose;*/
-    padding-top: 10px;
-    line-height: 1.8;
+  /*line-break: loose;*/
+  padding-top: 10px;
+  line-height: 1.8;
+}
+
+ol > li {
+  margin: 15px 10px 15px 10px;
 }
 
 li {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .step {
-    position: relative;
-    width: 500px;
-    padding: 40px;
-    margin: 20px auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    -ms-box-sizing:     border-box;
-    -o-box-sizing:      border-box;
-    box-sizing:         border-box;
-    font-family: 'Lato', georgia, serif;
+  position: relative;
+  width: 500px;
+  padding: 40px;
+  margin: 20px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lato", georgia, serif;
 }
 
 .wideStep {
-    width: 800px;
+  width: 800px;
 }
 
 .autoWidth {
-    width: auto;
+  width: auto;
 }
 
-.smallComment{
-    color: gray;
-    font-size: small;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
-    font-style: italic;
-    border: gray 1px solid;
-    word-wrap: normal;
-    padding: 8px;
-    background-color: white;
-    margin: 15px 0px 15px 0px;
+.smallComment {
+  color: gray;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  border: gray 1px solid;
+  word-wrap: normal;
+  padding: 8px;
+  background-color: white;
+  margin: 15px 0px 15px 0px;
 }
 
 .capitalText {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .textStretch div {
-    text-align: justify;
-    letter-spacing: 3px;
-    word-wrap: none;
-    margin:10px 0px 10px 0px;
+  text-align: justify;
+  letter-spacing: 3px;
+  word-wrap: none;
+  margin: 10px 0px 10px 0px;
 }
 
 .textStretch div:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 
 #intro div:last-of-type {
-    flex-grow: 4;
-    flex-direction: row;
+  flex-grow: 4;
+  flex-direction: row;
 }
 
 #foundation {
-    font-size: 64px;
-    font-weight: bolder;
+  font-size: 64px;
+  font-weight: bolder;
 }
 
 .firstStep {
-    background-image: url("img/japanese_sun.jpg");
-    background-position: center;
+  background-image: url("img/japanese_sun.jpg");
+  background-position: center;
 }
 
 .semiTransparent {
-    background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .blueBorder {
-    border: lightskyblue 10px solid;
-    background-color: white;
-    margin:10px;
+  border: lightskyblue 10px solid;
+  background-color: white;
+  margin: 10px;
 }
 
-strong { 
-    font-weight: bolder;
-  }
+.darkBlueBorder {
+  border: darkblue 15px dashed;
+  background-color: white;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+div.scroll {
+  background-color: transparent;
+  width: 100%;
+  height: 350px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+div.rotated {
+  width: auto;
+  height: auto;
+  -ms-transform: rotate(5deg); /* IE 9 */
+  transform: rotate(5deg);
+  box-shadow: 5px 10px cyan;
+}
