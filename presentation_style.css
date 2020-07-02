@@ -138,10 +138,15 @@ img {
   justify-content: center;
 }
 
+.container img {
+    width:100%;
+}
+
 .importantContent {
   font-size: 35px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .imgContainer {
@@ -240,6 +245,11 @@ img {
 
 .pinkWallpaper {
     background-image: url("img/pink_wall.jpg");
+    background-repeat: repeat;
+}
+
+.purpleWallpaper {
+    background-image: url("img/purple_wall.png");
     background-repeat: repeat;
 }
 
@@ -373,4 +383,8 @@ div.rotatedAnticlock {
 
 div.pinkShadow {
     box-shadow: 5px 10px var(--pink);
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
 }
