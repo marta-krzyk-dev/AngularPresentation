@@ -222,6 +222,7 @@ img {
 
 .green {
   color: var(--green);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .red {
@@ -232,6 +233,11 @@ img {
   background-color: white;
 }
 
+.blackBackground {
+    background-color: black;
+  }
+  
+
 .bluePatternBackground {
   background-image: url("img/blue_wallpaper.png");
   background-repeat: repeat;
@@ -240,6 +246,11 @@ img {
 
 .greenWallpaper {
     background-image: url("img/green_wall.png");
+    background-repeat: repeat;
+}
+
+.greenWallpaper2 {
+    background-image: url("img/green_wall2.png");
     background-repeat: repeat;
 }
 
@@ -367,8 +378,7 @@ div.scroll {
 }
 
 div.rotated {
-
-    margin-top: 25px;
+  margin-top: 25px;
   width: auto;
   height: auto;
   -ms-transform: rotate(5deg); /* IE 9 */
@@ -381,8 +391,18 @@ div.rotatedAnticlock {
     transform: rotate(-5deg);
 }
 
+#angular_logo {
+    margin-bottom: 50px;
+    padding: 30px;
+    padding-left: 50%;
+}
+
 div.pinkShadow {
     box-shadow: 5px 10px var(--pink);
+}
+
+div.blackShadow {
+    box-shadow: 5px 10px black;
 }
 
 code {
