@@ -64,21 +64,51 @@ img {
     font-weight: 800;
     text-transform: uppercase;
     margin: 0px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     text-align: center;
     color: black;
+    padding: 0px 15px 0px 15px;
+}
+
+.smallTitle {
+    font-size: 50px;
+    margin-left: 5px;
+    padding:0px 5px 0px 5px;
 }
 
 .greenText {
     background-color:#45b23d;
     color:white;
-    padding: 0px 15px 0px 15px;
 }
 
 .redText {
     background-color:red;
     color:#fff43b;
-    padding: 0px 15px 0px 15px;
+}
+
+.blueText {
+    background-color: darkblue;
+    color:white;
+}
+
+.babyBlueText {
+    background-color: skyblue;
+    color:white;
+}
+
+.blackText {
+    background-color: black;
+    color:white;
+}
+
+.pinkText {
+    background-color: #FF2B69;
+    color:white;
+}
+
+.purpleText {
+    background-color: purple;
+    color:white;
 }
 
 .green {
@@ -122,6 +152,7 @@ li {
     word-wrap: normal;
     padding: 8px;
     background-color: white;
+    margin: 15px 0px 15px 0px;
 }
 
 .capitalText {
@@ -132,6 +163,7 @@ li {
     text-align: justify;
     letter-spacing: 3px;
     word-wrap: none;
+    margin:10px 0px 10px 0px;
 }
 
 .textStretch div:after {
@@ -158,3 +190,13 @@ li {
 .semiTransparent {
     background-color: rgba(255, 255, 255, 0.8);
 }
+
+.blueBorder {
+    border: lightskyblue 10px solid;
+    background-color: white;
+    margin:10px;
+}
+
+strong { 
+    font-weight: bolder;
+  }

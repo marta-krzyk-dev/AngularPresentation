@@ -32,6 +32,7 @@
 	</div>
 	</div>
 
+
 	<div class="step cons" data-x="0" data-y="0" style="background-color: lightgoldenrodyellow;">
 		<div class="container" >
 			<div class="imgContainer"><img src="img/sad.png"></div>
@@ -65,14 +66,55 @@
 		</ul>
 	</div>
 
-	<div class="step" data-x="500" data-y="-800" data-scale="1">
-    This is slide 4
+	<div class="step blueBorder" data-x="500" data-y="-1000" data-scale="1">
+		<span class="title blueText">Technologies</span>
+		<div class="textStretch capitalText">
+			<div>Angular is a platform and framework for building single-page client applications using HTML and TypeScript. CSS is used to apply style onto HTML.</div>
+		</div>
+		<div class="container">
+			<img src="img/technologies.png" height="200px"/>
+		</div>
+		<div class="smallComment">Angular is written in TypeScript which is a superset of 
+			JavaScript that adds static typing, interfaces, generics, enumerated types and more.</div>
 	</div>
-	<div class="step" data-x="0" data-y="-800" data-rotate="90">
-		This is slide 5 and it rotates in.
+
+	
+	<div class="step" style="width: 800px;" data-x="-200" data-y="-1000" data-rotate="90">
+		<span class="title blackText">Modules</span><span class="title smallTitle blackText">and</span>
+		<span class="title pinkText">components</span>
+		<span class="textStretch capitalText">
+			<div>Angular app is a set of <strong class="purpleText">NgModules</strong>: at least 1 root module (AppModule) and any number of feature modules.
+				The children of a module are called <strong class="greenText">components</strong>.
+				NgModules (parents) provide a <strong class="babyBlueText">compilation context</strong> for their components.</div>
+		</span>
+		<div class="smallComment">Take a look at the root folder of an Angular app. The directories help to mark the hierarchy between the modules and components.</div>
+		<div class="container">
+			<img src="img/components_dir.png" height="400px" width="auto"/>
+			<img src="img/components_diagram.png" height="400px" width="auto"/>
+		</div>
 	</div>
-	<div class="step" data-x="-2600" data-y="-800" data-rotate-x="30" data-rotate-y="-60" data-rotate-z="90" data-scale="4">
-		This is slide 7 and it has a 3D transition AND a scale.
+
+	<div class="step" data-x="-2600" data-y="-800" data-rotate-x="30" data-rotate-y="-60" data-rotate-z="90" data-scale="5">
+		<span class="title pinkText">components</span>
+		<div class="textStretch capitalText">
+			<strong class="pinkText">Components</strong> are made up of 3 things: a TypeScript class, HTML view and CSS style. A component controls a patch of screen called a <strong class="blueText">view</strong>.
+		</div>
+		<div class="smallComment">Example component class:</div>
+			<code>
+				export class HeroListComponent implements OnInit {
+					heroes: Hero[];
+					selectedHero: Hero;
+				  
+					constructor(private service: HeroService) { }
+				  
+					ngOnInit() {
+					  this.heroes = this.service.getHeroes();
+					}
+				  
+					selectHero(hero: Hero) { this.selectedHero = hero; }
+				  }
+			</code>
+		</span>
 	</div>
  </div>
  
