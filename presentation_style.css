@@ -238,6 +238,11 @@ img {
     background-repeat: repeat;
 }
 
+.pinkWallpaper {
+    background-image: url("img/pink_wall.jpg");
+    background-repeat: repeat;
+}
+
 ul {
   /*line-break: loose;*/
   padding-top: 10px;
@@ -267,6 +272,10 @@ li {
 
 .wideStep {
   width: 800px;
+}
+
+.extraWideStep {
+    width: 1000px;
 }
 
 .autoWidth {
@@ -348,11 +357,18 @@ div.scroll {
 }
 
 div.rotated {
+
+    margin-top: 25px;
   width: auto;
   height: auto;
   -ms-transform: rotate(5deg); /* IE 9 */
   transform: rotate(5deg);
   box-shadow: 5px 10px cyan;
+}
+
+div.rotatedAnticlock {
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    transform: rotate(-5deg);
 }
 
 div.pinkShadow {
