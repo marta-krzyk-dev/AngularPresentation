@@ -1,3 +1,8 @@
+:root {
+    --pink: #ff2b69;
+    --green: #45b23d;
+  }
+
 .no-support-message {
   display: none;
 }
@@ -143,9 +148,7 @@ img {
   width: 50%;
   height: 50%;
 }
-.titleContainer {
-  /*width:60%;*/
-}
+
 .title {
   font-size: 100px;
   font-weight: 800;
@@ -198,7 +201,7 @@ img {
 }
 
 .pinkText {
-  background-color: #ff2b69;
+  background-color: var(--pink);
   color: white;
 }
 
@@ -213,7 +216,7 @@ img {
 }
 
 .green {
-  color: #45b23d;
+  color: var(--green);
 }
 
 .red {
@@ -228,6 +231,11 @@ img {
   background-image: url("img/blue_wallpaper.png");
   background-repeat: repeat;
   background-position: left;
+}
+
+.greenWallpaper {
+    background-image: url("img/green_wall.png");
+    background-repeat: repeat;
 }
 
 ul {
@@ -345,4 +353,8 @@ div.rotated {
   -ms-transform: rotate(5deg); /* IE 9 */
   transform: rotate(5deg);
   box-shadow: 5px 10px cyan;
+}
+
+div.pinkShadow {
+    box-shadow: 5px 10px var(--pink);
 }
